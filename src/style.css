@@ -53,6 +53,11 @@ header {
   transform: rotate(45deg);
   position: relative;
   top: 45px;
+  cursor: pointer;
+}
+.plus_button.active {
+  -webkit-box-shadow: inset 0px 0px 24px 1px rgba(0, 0, 0, 0.18);
+  box-shadow: inset 0px 0px 24px 1px rgba(0, 0, 0, 0.18);
 }
 .plus_button::before {
   content: "";
@@ -126,6 +131,9 @@ header {
   color: #889dea;
   font-weight: 300;
 }
+.item_date span {
+  margin-right: 5px;
+}
 .user_icon {
   color: #b9b9b9;
   font-size: 20px;
@@ -141,6 +149,88 @@ header {
   margin-top: 10px;
   margin-left: 40px;
 }
+.todo_input.task_done {
+  color: #bbbbbb;
+  text-decoration: line-through;
+}
 .todo_input::placeholder {
   color: #b9b9b9;
+}
+
+.have_no_item_container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+}
+.have_no_item_container.hidden {
+  display: none;
+}
+.have_no_item_container i {
+  font-size: 400px;
+}
+.have_no_item_container h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.create_new_task_btn {
+  margin: 0 auto;
+  margin-top: 40px;
+  cursor: pointer;
+  width: 40%;
+  background-color: #88eaa9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 11px;
+}
+.create_new_task_btn i {
+  margin-right: 10px;
+}
+.create_new_task_btn.active {
+  -webkit-box-shadow: inset 0px 0px 24px 1px rgba(0, 0, 0, 0.18);
+  box-shadow: inset 0px 0px 24px 1px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  .have_no_item_container i {
+    font-size: 300px;
+  }
+  .have_no_item_container h1 {
+    font-size: 50px;
+  }
+  .create_new_task_btn {
+    width: 39%;
+    font-size: 18px;
+  }
+  .create_new_task_btn i {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 414px) {
+  .have_no_item_container i {
+    font-size: 250px;
+  }
+  .have_no_item_container h1 {
+    font-size: 40px;
+  }
+  .create_new_task_btn {
+    width: 52%;
+    font-size: 18px;
+  }
+  .create_new_task_btn i {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .have_no_item_container h1 {
+    font-size: 35px;
+  }
 }
