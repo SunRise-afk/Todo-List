@@ -145,10 +145,13 @@ header {
 
 .todo_input {
   -webkit-appearance: none;
-  width: 100%;
+  width: 90%;
   border: none;
   margin-top: 10px;
   margin-left: 40px;
+}
+div.todo_input {
+  word-wrap: break-word;
 }
 .todo_input.task_done {
   color: #bbbbbb;
