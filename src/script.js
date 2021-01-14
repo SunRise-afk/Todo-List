@@ -195,7 +195,6 @@ function renderTask(task, isNewTask = false) {
     taskMonth.innerText = MONTHS_NAME[task.month];
     const taskYear = document.createElement("span");
     taskYear.innerText = task.year;
-
     const rightSideWrapper = document.createElement("div");
     rightSideWrapper.classList.add("right_side");
 

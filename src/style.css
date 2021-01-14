@@ -142,6 +142,7 @@ header {
 .user_icon:hover {
   color: #889dea;
 }
+
 .todo_input {
   -webkit-appearance: none;
   width: 100%;
